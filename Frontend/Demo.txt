@@ -1,0 +1,7 @@
+import DOMPurify from 'dompurify';
+
+const unsanitizedHTML = '<div>Hello <script>alert("XSS Attack")</script> World!</div>';
+const sanitizedHTML = DOMPurify.sanitize(unsanitizedHTML);
+
+console.log(sanitizedHTML);
+// Output: <div>Hello  World!</div>
