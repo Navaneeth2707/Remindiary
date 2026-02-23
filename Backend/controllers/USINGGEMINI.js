@@ -139,7 +139,6 @@ export const getEntriesByDate = async (req, res) => {
 
 export const generateDiaryEntry = async (req, res) => {
   const { date, extraText } = req.body;
-  console.log("appl");
 
   const userId = req.user.id;
   const username = req.user.name;

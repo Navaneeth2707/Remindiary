@@ -33,7 +33,7 @@ export default function MyDiary() {
           setDiaryEntries([]);
         }
       } catch (error) {
-        console.error('Error fetching diary entries:', error);
+        
         setDiaryEntries([]);
       }
       setLoading(false);
